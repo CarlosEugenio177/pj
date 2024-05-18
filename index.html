@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Calculadora</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/ace.png">
+    <title>Calculadora Ace</title>
 </head>
 <body>  
     <div class="box">
         <div class="titulo">
-            <h1>BEM VINDO....</h1>
-            <h2 class="sub">Calcule seu custo ideal de acordo com a opção abaixo que mais se encaixa no seu lançamento ou perpétuo</h2>
+            <h1>Titulo</h1>
+            <h2 class="sub">Mudar texto...</h2>
         </div>
         <div class="container_box">
             <section class="form-container_1">
@@ -37,56 +38,65 @@
     
                 <div id="resultado" style="display: none;">
                     <h2>Resultado:</h2>
-                    <p>Projeção de custo por Lead: <span id="custoPorLead"></span> R$</p>
+                    <p style="color: orangered;"><strong>Projeção de custo por Lead: <span id="custoPorLead"></span> R$</strong></p>
                 </div>
             </section>
 
             <section class="form-container_2">
                 <form id="Invlancamento_form">
-                    <h1>Investimento no Lançamento</h1>
+                    <h1>Distribuição do Lançamento</h1>
                     <p class="aviso">Atenção: apenas números no campo</p>
-                    <label for="Investimento_T">Investimento</label>
+                    <label for="Investimento_T">Seu investimento</label>
                     <input type="number" id="Investimento_T" name="Investimento" step="0.01" required>
-    
+            
                     <button type="submit">Calcular</button>
                 </form>
-    
-                <div id="resultado" style="display:none;">
+            
+                <div id="resultado_2" style="display:none;">
                     <h2>Resultado:</h2>
-                    <p>Aumento de Base: <span id="custoPorLead"></span> R$</p>
-                    <p>Distribuição Ace: <span id="custoPorLead"></span> R$</p>
-                    <p>Captura de Lead: <span id="custoPorLead"></span> R$</p>
-                    <p>RMKT Coca: <span id="custoPorLead"></span> R$</p>
-                    <p>RMKT Ace: <span id="custoPorLead"></span> R$</p>
-                    <p>RMKT Lembrete: <span id="custoPorLead"></span> R$</p>
+                    <p>Aumento de Base: <span id="aumentoDeBase"></span> R$</p>
+                    <p>Distribuição Ace: <span id="distribuicaoAce"></span> R$</p>
+                    <p>Captura de Lead: <span id="capturaDeLead"></span> R$</p>
+                    <p>RMKT Coca: <span id="rmktCoca"></span> R$</p>
+                    <p>RMKT Ace: <span id="rmktAce"></span> R$</p>
+                    <p>RMKT Lembrete: <span id="rmktLembrete"></span> R$</p>
+                    <p>RMKT de Aula: <span id="rmktAula"></span> R$</p>
+                    <p>RMKT Panela de pressão: <span id="rmktPan"></span> R$</p>
+                    <p>RMKT de Venda: <span id="rmktvenda"></span> R$</p>
                 </div>
             </section>
 
             <section class="form-container_3">
                 <form id="QntInvProxLanc_form">
-                    <h1>Quanto Investir no proximo lançamento</h1>
+                    <h1>Investimento no proximo lançamento</h1>
                     <p class="aviso">Atenção: apenas números nos campos</p>
-                    <label for="Receita_anum">Receita de Anuncios</label>
+                    <label for="Inv_anum">Investimento em Anuncios</label>
                     <input type="number" id="Receita_anum" name="Receita" step="0.01" required>
-    
-                    <label for="Inv_anum">Investimento de Anuncios</label>
+            
+                    <label for="Receita_anum">Receita em Anuncios</label>
                     <input type="number" id="Inv_anum" name="Inv" step="0.01" required>
-
-    
+            
                     <button type="submit">Calcular</button>
                 </form>
-    
-                <div id="resultado" style="display: none;">
+            
+                <div id="resultado_3" style="display: none;">
                     <h2>Resultado:</h2>
                     <p>Seu Roas: <span id="Roas_id"></span> R$</p>
+                    <p id="avisoRoas" style="color: red; display: none;"><strong>Não aumentar o investimento.</strong></p>
+                    <span id="lucro" style="color: green; display: none;"></span>
                 </div>
             </section>
     
         </div>
+        <footer>
+            <div>
+                <p style="text-align: center;" > <strong>©2024 Trafego.SA Todos os direitos reservados</strong></p>
+        </div>
+    </footer>
     </div>
-    
 
     <script src="/js/index.js"></script>
+
 
 
 </body>
