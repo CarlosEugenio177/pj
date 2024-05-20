@@ -53,9 +53,6 @@ body {
   transition: transform 0.3s;
 }
 
-.form-container_1:hover, .form-container_2:hover, .form-container_3:hover {
-  transform: scale(1.05);
-}
 
 .form-container_1 h1, .form-container_2 h1, .form-container_3 h1 {
   margin-top: 0;
