@@ -68,22 +68,25 @@
 
             <section class="form-container_3">
                 <form id="QntInvProxLanc_form">
-                    <h1>Investimento no proximo lançamento</h1>
+                    <h1>Investimento no próximo lançamento</h1>
                     <p class="aviso">Atenção: apenas números nos campos</p>
-                    <label for="Inv_anum">Investimento em Anuncios</label>
-                    <input type="number" id="Receita_anum" name="Receita" step="0.01" required>
-            
-                    <label for="Receita_anum">Receita em Anuncios</label>
+                    
+                    <label for="Inv_anum">Investimento em Anúncios</label>
                     <input type="number" id="Inv_anum" name="Inv" step="0.01" required>
-            
+                    
+                    <label for="Receita_anum">Receita em Anúncios</label>
+                    <input type="number" id="Receita_anum" name="Receita" step="0.01" required>
+                    
                     <button type="submit">Calcular</button>
                 </form>
             
                 <div id="resultado_3" style="display: none;">
                     <h2>Resultado:</h2>
-                    <p>Seu Roas: <span id="Roas_id"></span> R$</p>
+                    <p>Seu ROAS: <span id="Roas_id"></span></p>
                     <p id="avisoRoas" style="color: red; display: none;"><strong>Não aumentar o investimento.</strong></p>
-                    <span id="lucro" style="color: green; display: none;"></span>
+                    <span id="lucro" style="color: green; display: none; font-weight: bold;"></span>
+                    <span id="reenvestir" style="color: blue; display:none; font-weight: bold;"></span>
+                    <span id="total" style="color: orangered; display:none; font-weight: bold;"></span>
                 </div>
             </section>
     
@@ -103,3 +106,4 @@
 
 
 </html>
+
